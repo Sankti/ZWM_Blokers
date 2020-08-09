@@ -1,21 +1,33 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { data } from '../data';
 
 class CharacterSelect extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="Age-label">
-          <p>Ziomek z ZWM-u</p>
-          <p>Siła: {this.props.strength}</p>
-          <p>Intelekt: {this.props.intellect}</p>
-          <p>Charyzma: {this.props.charisma}</p>
-        </div>
-        <p>Wybierz klasę ziomka:</p>
-        <button onClick={this.props.selectKnight}>Rycerz Ortalionu</button>
-        <button onClick={this.props.selectHacker}>Programista</button>
-        <button onClick={this.props.selectRapper}>Raper</button>
-      </div>
+        <>
+            <div>
+                <p>Ziomek z ZWM-u</p>
+                <p>Siła: {this.props.strength}</p>
+                <p>Intelekt: {this.props.intellect}</p>
+                <p>Charyzma: {this.props.charisma}</p>
+            </div>
+            <div>
+                <img className="avatar" src={data.classes.knight.avatar} alt="" />
+                <br />
+                <button onClick={this.props.selectKnight}>{data.classes.knight.name}</button>
+            </div>
+            <div>
+                <img className="avatar" src={data.classes.hacker.avatar} alt="" />
+                <br />
+                <button onClick={this.props.selectHacker}>{data.classes.hacker.name}</button>
+            </div>
+            <div>
+                <img className="avatar" src={data.classes.rapper.avatar} alt="" />
+                <br />
+                <button onClick={this.props.selectRapper}>{data.classes.rapper.name}</button>
+            </div>
+        </>
     );
   }
 }

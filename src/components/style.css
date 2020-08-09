@@ -8,6 +8,8 @@ a {
 
 body {
     background-image: linear-gradient(#FFFED7, #448198);
+    background-repeat: no-repeat;
+    height: 100vh;
     margin: 1em;
     font-family: 'Verdana', Courier, monospace;
     color: #5B5379;
@@ -73,4 +75,8 @@ svg {
     -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
-    }
+}
+
+.avatar {
+    height: 100px;
+}
