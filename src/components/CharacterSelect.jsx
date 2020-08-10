@@ -7,12 +7,6 @@ class CharacterSelect extends Component {
     return (
         <>
             <div>
-                <p>Ziomek z ZWM-u</p>
-                <p>Siła: {this.props.strength}</p>
-                <p>Intelekt: {this.props.intellect}</p>
-                <p>Charyzma: {this.props.charisma}</p>
-            </div>
-            <div>
                 <img className="avatar" src={data.classes.knight.avatar} alt="" />
                 <br />
                 <button onClick={this.props.selectKnight}>{data.classes.knight.name}</button>

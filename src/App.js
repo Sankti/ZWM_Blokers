@@ -3,6 +3,7 @@ import './App.css';
 import { data } from './data';
 import './components/style.css';
 import CharacterSelect from './components/CharacterSelect';
+import LeftSidebar from './components/LeftSidebar';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </header>
 
       <section className="container">
+        <LeftSidebar />
         <CharacterSelect />
       </section>
     </div>
