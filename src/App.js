@@ -13,8 +13,12 @@ function App() {
       </header>
 
       <section className="container">
-        <LeftSidebar />
-        <CharacterSelect />
+        <div className="sidebar">
+          <LeftSidebar />
+        </div>
+        
+          <CharacterSelect />
+        
       </section>
     </div>
   );
