@@ -4,6 +4,7 @@ const initialState = {
     strength: 8,
     intellect: 8,
     charisma: 8,
+    health: 3
 };
 
 const reducer = (state = initialState, action) => {
@@ -21,6 +22,10 @@ const reducer = (state = initialState, action) => {
         newState.strength = data.classes.rapper.strength;
         newState.intellect = data.classes.rapper.intellect;
         newState.charisma = data.classes.rapper.charisma;
+    } else if (action.type === 'HEALTH_UP') {
+        newState.health++;
+    } else if (action.type === 'HEALTH_DOWN') {
+        newState.health--;
     }
 
     return newState;

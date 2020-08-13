@@ -4,6 +4,7 @@ import { data } from './data';
 import './components/style.css';
 import CharacterSelect from './components/CharacterSelect';
 import LeftSidebar from './components/LeftSidebar';
+import Health from './components/Health';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <section className="container">
         <div className="sidebar">
           <LeftSidebar />
+          <Health />
         </div>
         
         <CharacterSelect />
