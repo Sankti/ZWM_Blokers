@@ -5,6 +5,10 @@ import avatarRapper from './img/avatars/rapper.png';
 
 export const data = {
     logo: logo,
+    stats: {
+        baseAttribute: 8,
+        baseHealth: 3,
+    },
     classes: {
         knight: {
             name: "Rycerz",

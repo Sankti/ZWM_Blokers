@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { data } from '../data';
 
 class Health extends Component {
   render() {

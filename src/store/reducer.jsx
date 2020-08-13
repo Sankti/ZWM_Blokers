@@ -1,10 +1,10 @@
 import { data } from '../data';
 
 const initialState = {
-    strength: 8,
-    intellect: 8,
-    charisma: 8,
-    health: 3
+    strength: data.stats.baseAttribute,
+    intellect: data.stats.baseAttribute,
+    charisma: data.stats.baseAttribute,
+    health: data.stats.baseHealth,
 };
 
 const reducer = (state = initialState, action) => {
@@ -26,7 +26,7 @@ const reducer = (state = initialState, action) => {
         newState.health++;
     } else if (action.type === 'HEALTH_DOWN') {
         newState.health--;
-    }
+    };
 
     return newState;
 };
