@@ -8,7 +8,7 @@ import LeftSidebar from './components/LeftSidebar';
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className="top">
         <img src={data.logo} alt="ZWM Blokers Logo" />
       </header>
 
@@ -17,7 +17,11 @@ function App() {
           <LeftSidebar />
         </div>
         
-          <CharacterSelect />
+        <CharacterSelect />
+
+        <div className="sidebar">
+          <LeftSidebar />
+        </div>
         
       </section>
     </div>

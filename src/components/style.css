@@ -44,10 +44,15 @@ svg {
     flex-wrap: no-wrap;
 }
 
+.top {
+    margin-bottom: 20px;
+}
+
 .sidebar {
     background-image: linear-gradient(#faf455, #4aaccf);
     background-repeat: no-repeat;
     width: 20vw;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
