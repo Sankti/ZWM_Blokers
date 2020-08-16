@@ -27,14 +27,14 @@ svg {
 }
 
 .mapdiv path {
-    fill: #6E6887;
-    stroke: #9F9EA5;
+    fill: #6e688710;
+    stroke: #9f9ea510;
     stroke-width: 1px;
     transition: fill 0.3s;
 }
 
 .mapdiv :hover {
-    fill: #5B5379;
+    fill: #5b53795d;
 }
 
 .container {

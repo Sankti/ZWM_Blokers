@@ -7,10 +7,10 @@ class Stats extends Component {
     return (
       <>
         <div>
-        <svg width="50" height="50">
-          <rect x="0" y="0" width="50" height="50" stroke="#660000" stroke-width="3px" fill="red"/>
+        <svg width="100" height="50">
+          <rect x="0" y="0" width="100" height="50" stroke="#660000" stroke-width="3px" fill="red"/>
           <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
-            {this.props.health}
+            {this.props.health} {data.stats.healthName}
           </text>
         </svg>
         <svg width="100" height="50">

@@ -9,6 +9,7 @@ export const data = {
         baseAttribute: 8,
         baseHealth: 3,
         baseMoney: 20,
+        healthName: "PŻ",
         currency: "PLN",
     },
     classes: {

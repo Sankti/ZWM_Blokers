@@ -5,6 +5,7 @@ import './components/style.css';
 import CharacterSelect from './components/CharacterSelect';
 import LeftSidebar from './components/LeftSidebar';
 import Stats from './components/Stats';
+import Map from './components/Map';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Stats />
         </div>
         
+        <div className="mapdiv">
+          <Map />
+        </div>
+
         <CharacterSelect />
 
         <div className="sidebar">
