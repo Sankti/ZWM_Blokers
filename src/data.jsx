@@ -8,6 +8,8 @@ export const data = {
     stats: {
         baseAttribute: 8,
         baseHealth: 3,
+        baseMoney: 20,
+        currency: "PLN",
     },
     classes: {
         knight: {

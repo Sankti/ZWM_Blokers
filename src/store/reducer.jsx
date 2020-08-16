@@ -5,6 +5,7 @@ const initialState = {
     intellect: data.stats.baseAttribute,
     charisma: data.stats.baseAttribute,
     health: data.stats.baseHealth,
+    money: data.stats.baseMoney,
 };
 
 const reducer = (state = initialState, action) => {
@@ -26,6 +27,10 @@ const reducer = (state = initialState, action) => {
         newState.health++;
     } else if (action.type === 'HEALTH_DOWN') {
         newState.health--;
+    } else if (action.type === "MONEY_UP") {
+        newState.money++;
+    } else if (action.type === "MONEY_DOWN") {
+        newState.money--;
     };
 
     return newState;
