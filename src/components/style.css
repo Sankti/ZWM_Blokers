@@ -20,6 +20,10 @@ svg {
     margin-right: 5px;
 }
 
+.zwm-map {
+    height: 800px;
+}
+
 .mapdiv {
     text-align: center;
     height: 10%;
@@ -35,6 +39,10 @@ svg {
 
 .mapdiv :hover {
     fill: #5b53795d;
+}
+
+.zwm-map {
+    height: 10vh;
 }
 
 .container {
