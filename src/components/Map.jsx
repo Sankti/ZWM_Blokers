@@ -5,8 +5,8 @@ function Map() {
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="666.667"
-        height="800"
+        width="333.334"
+        height="400"
         version="1.1"
         viewBox="0 0 666.667 800"
     >

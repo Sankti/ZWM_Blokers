@@ -20,8 +20,8 @@ svg {
     margin-right: 5px;
 }
 
-path {
-    height: 800px;
+.zwm-map {
+    size: 100%;
 }
 
 .mapdiv {
