@@ -5,7 +5,7 @@ import './components/style.css';
 import CharacterSelect from './components/CharacterSelect';
 import LeftSidebar from './components/LeftSidebar';
 import Stats from './components/Stats';
-import Map from './components/Map';
+import GameMap from './components/GameMap';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         </div>
         
         <div className="mapdiv">
-          <Map />
+          <GameMap />
         </div>
 
         <CharacterSelect />

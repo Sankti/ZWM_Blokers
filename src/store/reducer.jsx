@@ -6,6 +6,7 @@ const initialState = {
     charisma: data.stats.baseAttribute,
     health: data.stats.baseHealth,
     money: data.stats.baseMoney,
+    location: data.stats.location,
 };
 
 const reducer = (state = initialState, action) => {

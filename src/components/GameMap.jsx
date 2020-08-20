@@ -1,6 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
 
-function Map() {
+function GameMap() {
   return (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -37,4 +38,19 @@ function Map() {
   );
 }
 
-export default Map;
+const mapStateToProps = state => {
+  return {
+    location: state.location,
+  };
+};
+
+const mapDispachToProps = dispatch => {
+  return {
+    setLocation: dispatch({type: "CHANGE_LOCATION"}) //to introduce payload with val + displayLocation component
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispachToProps
+)(GameMap);

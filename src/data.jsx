@@ -11,6 +11,7 @@ export const data = {
         baseMoney: 20,
         healthName: "PŻ",
         currency: "PLN",
+        location: "Nowy ZWM"
     },
     classes: {
         knight: {
