@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class LeftSidebar extends Component {
+class Attributes extends Component {
   render() {
     return (
         <>
@@ -25,4 +25,4 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps
-)(LeftSidebar);
+)(Attributes);
