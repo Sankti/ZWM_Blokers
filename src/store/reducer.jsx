@@ -32,6 +32,8 @@ const reducer = (state = initialState, action) => {
         newState.money++;
     } else if (action.type === "MONEY_DOWN") {
         newState.money--;
+    } else if (action.type === "SET_LOCATION") {
+        newState.location = action.value;
     };
 
     return newState;

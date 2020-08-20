@@ -20,10 +20,6 @@ svg {
     margin-right: 5px;
 }
 
-.zwm-map {
-    size: 100%;
-}
-
 .mapdiv {
     text-align: center;
     height: 10%;
@@ -32,7 +28,7 @@ svg {
 
 .mapdiv path {
     fill: #6e688710;
-    stroke: #9f9ea510;
+    stroke: #000000fb;
     stroke-width: 1px;
     transition: fill 0.3s;
 }

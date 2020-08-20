@@ -3,9 +3,10 @@ import './App.css';
 import { data } from './data';
 import './components/style.css';
 import CharacterSelect from './components/CharacterSelect';
-import LeftSidebar from './components/LeftSidebar';
+import Attributes from './components/Attributes';
 import Stats from './components/Stats';
 import GameMap from './components/GameMap';
+import Location from './components/Location';
 
 function App() {
   return (
@@ -16,18 +17,17 @@ function App() {
 
       <section className="container">
         <div className="sidebar">
-          <LeftSidebar />
+          <Attributes />
           <Stats />
-        </div>
-        
-        <div className="mapdiv">
-          <GameMap />
         </div>
 
         <CharacterSelect />
 
         <div className="sidebar">
-          <LeftSidebar />
+          <Location />
+          <span className="mapdiv">
+            <GameMap />
+          </span>
         </div>
         
       </section>

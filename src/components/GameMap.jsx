@@ -6,8 +6,8 @@ function GameMap() {
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="333.334"
-        height="400"
+        width="250"
+        height="300"
         version="1.1"
         viewBox="0 0 666.667 800"
     >
@@ -46,7 +46,11 @@ const mapStateToProps = state => {
 
 const mapDispachToProps = dispatch => {
   return {
-    setLocation: dispatch({type: "CHANGE_LOCATION"}) //to introduce payload with val + displayLocation component
+    setLocationOldZWM: dispatch({type: "CHANGE_LOCATION", value: "Stary ZWM"}),
+    setLocationPG1: dispatch({type: "CHANGE_LOCATION", value: "PG 1"}),
+    setLocationReal: dispatch({type: "CHANGE_LOCATION", value: "Real"}),
+    setLocationPark: dispatch({type: "CHANGE_LOCATION", value: "Park"}),
+    setLocationNewZWM: dispatch({type: "CHANGE_LOCATION", value: "Nowy ZWM"}),
   };
 };
 
