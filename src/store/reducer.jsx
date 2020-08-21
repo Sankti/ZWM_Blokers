@@ -32,8 +32,10 @@ const reducer = (state = initialState, action) => {
         newState.money++;
     } else if (action.type === "MONEY_DOWN") {
         newState.money--;
-    } else if (action.type === "SET_LOCATION") {
-        newState.location = action.value;
+    } else if (action.type === "GO_TO_OLD_ZWM") {
+        newState.location = "Stary ZWM";
+    } else if (action.type === "GO_TO_PG1") {
+        newState.location = "PG1";
     };
 
     return newState;

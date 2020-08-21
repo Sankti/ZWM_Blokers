@@ -4,6 +4,9 @@ import { connect } from "react-redux";
 class GameMap extends Component {
   render() {
     return (
+      <>
+      <p>{this.props.location}</p>
+      <button onClick={this.props.setLocationOldZWM}>Idź na Stary ZWM</button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -36,6 +39,7 @@ class GameMap extends Component {
           <path d="M306.132 748.074l316.515-26.376 9.54-39.845-3.928-21.325-54.156-102.138-46.579-.561-11.504-12.627-37.6-2.526-23.29 14.872-70.15 12.908-6.734 32.549-19.642 3.367v19.08l-42.65 3.93 9.54 70.149-6.174 18.52-17.397 17.116z"></path>
         </g>
       </svg>
+      </>
     );
   }
 }
@@ -48,7 +52,7 @@ const mapStateToProps = state => {
 
 const mapDispachToProps = dispatch => {
   return {
-    setLocationOldZWM: dispatch({type: "CHANGE_LOCATION", value: "Stary ZWM"}),
+    setLocationOldZWM: dispatch({type: "GO_TO_OLD_ZWM"}),
     setLocationPG1: dispatch({type: "CHANGE_LOCATION", value: "PG 1"}),
     setLocationReal: dispatch({type: "CHANGE_LOCATION", value: "Real"}),
     setLocationPark: dispatch({type: "CHANGE_LOCATION", value: "Park"}),
