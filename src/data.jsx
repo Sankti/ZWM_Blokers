@@ -11,7 +11,6 @@ export const data = {
         baseMoney: 20,
         healthName: "PŻ",
         currency: "PLN",
-        location: "Nowy ZWM"
     },
     classes: {
         knight: {
@@ -35,5 +34,13 @@ export const data = {
             intellect: 6,
             charisma: 10,
         },
+    },
+    locations: {
+        location0: "Stary ZWM",
+        location1: "PG1",
+        location2: "Park",
+        locarion3: "Real",
+        location4: "LO6",
+        location5: "Nowy ZWM",
     },
 };

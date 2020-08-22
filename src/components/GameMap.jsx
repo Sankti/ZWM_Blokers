@@ -54,9 +54,9 @@ const mapDispachToProps = dispatch => {
   return {
     setLocationOldZWM: dispatch({type: "GO_TO_OLD_ZWM"}),
     setLocationPG1: dispatch({type: "GO_TO_PG1"}),
-    setLocationReal: dispatch({type: "CHANGE_LOCATION", value: "Real"}),
-    setLocationPark: dispatch({type: "CHANGE_LOCATION", value: "Park"}),
-    setLocationNewZWM: dispatch({type: "CHANGE_LOCATION", value: "Nowy ZWM"}),
+    setLocationReal: dispatch({type: "GO_TO_PARK"}),
+    setLocationPark: dispatch({type: "GO_TO_REAL"}),
+    setLocationNewZWM: dispatch({type: "GO_TO_NEW_ZWM"}),
   };
 };
 

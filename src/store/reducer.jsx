@@ -6,7 +6,7 @@ const initialState = {
     charisma: data.stats.baseAttribute,
     health: data.stats.baseHealth,
     money: data.stats.baseMoney,
-    location: data.stats.location,
+    location: data.locations.location0,
 };
 
 const reducer = (state = initialState, action) => {
@@ -33,9 +33,17 @@ const reducer = (state = initialState, action) => {
     } else if (action.type === "MONEY_DOWN") {
         newState.money--;
     } else if (action.type === "GO_TO_OLD_ZWM") {
-        newState.location = "Stary ZWM";
+        newState.location = data.locations.location0;
     } else if (action.type === "GO_TO_PG1") {
-        newState.location = "PG1";
+        newState.location = data.locations.location1;
+    } else if (action.type === "GO_TO_PARK") {
+        newState.location = data.locations.location2;
+    } else if (action.type === "GO_TO_REAL") {
+        newState.location = data.locations.location3;
+    } else if (action.type === "GO_TO_LO6") {
+        newState.location = data.locations.location4;
+    } else if (action.type === "GO_TO_NEW_ZWM") {
+        newState.location = data.locations.location5;
     };
 
     return newState;
