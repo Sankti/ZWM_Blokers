@@ -33,17 +33,17 @@ const reducer = (state = initialState, action) => {
     } else if (action.type === "MONEY_DOWN") {
         newState.money--;
     } else if (action.type === "GO_TO_OLD_ZWM") {
-        newState.location = data.locations.location0;
+        newState.location = 0;
     } else if (action.type === "GO_TO_PG1") {
-        newState.location = data.locations.location1;
+        newState.location = 1;
     } else if (action.type === "GO_TO_PARK") {
-        newState.location = data.locations.location2;
+        newState.location = 2;
     } else if (action.type === "GO_TO_REAL") {
-        newState.location = data.locations.location3;
+        newState.location = 3;
     } else if (action.type === "GO_TO_LO6") {
-        newState.location = data.locations.location4;
+        newState.location = 4;
     } else if (action.type === "GO_TO_NEW_ZWM") {
-        newState.location = data.locations.location5;
+        newState.location = 5;
     };
 
     return newState;
