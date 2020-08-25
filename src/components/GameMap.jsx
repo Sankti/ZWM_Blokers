@@ -7,6 +7,11 @@ class GameMap extends Component {
       <>
       <p>{this.props.location}</p>
       <button onClick={this.props.setLocationOldZWM}>Idź na Stary ZWM</button>
+      <button onClick={this.props.setLocationPG1}>Idź do PG1</button>
+      <button onClick={this.props.setLocationPark}>Idź do Parku</button>
+      <button onClick={this.props.setLocationReal}>Idź do Reala</button>
+      <button onClick={this.props.setLocationLO6}>Idź do LO6</button>
+      <button onClick={this.props.setLocationNewZWM}>Idź na Nowy ZWM</button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
